@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprytne Dzieci | Mądre Gry Edukacyjne</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4A90E2;
+            --secondary: #FF6B6B;
+            --accent: #FFD166;
+            --bg: #F7F9FC;
+            --text: #2D3436;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), #6c5ce7);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            color: var(--text);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-color: var(--accent);
+        }
+
+        .card-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .card p {
+            color: #636e72;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff4757;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #636e72;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🧩 SprytneDzieci.eu</h1>
+        <p>Bezpieczna przestrzeń, w której Twoje dziecko polubi matematykę. Darmowe gry edukacyjne wspomagające rozwój i logiczne myślenie.</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Wybierz grę i rozpocznij przygodę:</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">🚀</div>
+                <h3>Kosmiczna Matematyka</h3>
+                <p>Podstawy liczenia w galaktycznym wydaniu! Idealna gra na start, aby przełamać pierwsze lody z cyferkami w kosmicznym świecie.</p>
+                <a href="https://miromiro66.github.io/Kosmiczna-Matematyka-/" class="btn">Zagraj teraz</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🛸</div>
+                <h3>Kosmiczna Matematyka 2.0</h3>
+                <p>Kolejny poziom wtajemniczenia. Wyższe wyzwania matematyczne dla małych astronautów, którzy chcą sięgnąć gwiazd.</p>
+                <a href="https://miromiro66.github.io/Kosmiczna-Matematyka-2.0/" class="btn">Zagraj teraz</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🍕</div>
+                <h3>Ułamki dla Dzieci</h3>
+                <p>Ułamki nie muszą być straszne! Przyjazna wizualizacja i zadania, które pomagają zrozumieć pojęcie części i całości.</p>
+                <a href="https://miromiro66.github.io/Ulamki-dla-Dzieci.W-A/" class="btn">Zagraj teraz</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🧊</div>
+                <h3>Wyobraźnia Przestrzenna</h3>
+                <p>Trening umysłu i orientacji przestrzennej. Świetne ćwiczenie rozwijające kreatywność i nieszablonowe myślenie.</p>
+                <a href="https://miromiro66.github.io/-Teste-Wyobra-ni-Przestrzennej/" class="btn">Zagraj teraz</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 SprytneDzieci.eu | Tworzone z pasją do edukacji.</p>
+    </footer>
+
+</body>
+</html>
